@@ -37,7 +37,13 @@ class Scraper
       course.description = post.css("p").text
     end
     end
-  
+  if course.title
+        puts "Title: #{course.title}"
+        puts "  Schedule: #{course.schedule}"
+        puts "  Description: #{course.description}"
+      end
+    end
+  end
   
 end
 
